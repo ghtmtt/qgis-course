@@ -11,11 +11,13 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   source/introGIS.rst
-   source/proiezioni.rst
-   source/dati.rst
-   source/percorsi_progetto.rst
-   source/simboli_vettore.rst
-   source/geostatistica.rst
-   source/interpolazione.rst
-   source/documentazione.rst
+   source/0_installazione.rst
+   source/1_introGIS.rst
+   source/2_proiezioni.rst
+   source/3_dati.rst
+   source/4_percorsi_progetto.rst
+   source/5_simboli_vettore.rst
+   source/6_geostatistica.rst
+   source/7_interpolazione.rst
+   source/8_documentazione.rst
+   source/A1_installazione_3_parti.rst
