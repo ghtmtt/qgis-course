@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Interpolazione &mdash; QGISbase 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="QGISbase 1.0 documentation" href="../index.html" />
+    <link rel="next" title="Documentazione" href="documentazione.html" />
+    <link rel="prev" title="Geostatistica" href="geostatistica.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="documentazione.html" title="Documentazione"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="geostatistica.html" title="Geostatistica"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">QGISbase 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="interpolazione">
+<h1>Interpolazione<a class="headerlink" href="#interpolazione" title="Permalink to this headline">¶</a></h1>
+<p>L&#8217;interpolazione è una tecnica che permette di stimare il valore di una variabile grazie a dei valori campionari.</p>
+<img alt="../_images/int_1.png" src="../_images/int_1.png" />
+<p>Esistono molte molte tecniche diverse di interpolazione che danno risultati diversi.
+Non è facile capire quale tecnica usare, dipende molto dalla zona di interesse.</p>
+<p>Durante una interpolazione si può prevedere un raggio globale o locale attraverso qui ricercare i risultati da stimare.</p>
+<img alt="../_images/int_2.png" src="../_images/int_2.png" />
+<div class="section" id="idw">
+<h2>IDW<a class="headerlink" href="#idw" title="Permalink to this headline">¶</a></h2>
+<p>Il metodo dell scarto quadratico medio si basa sull&#8217;assunto che il peso del dato di input è inversamente proporzionale alla distanza dal valore da stimare.
+Questo significa che man mano che ci allontaniamo dalla zona che vogliamo stimare, il peso dei punti vicini perde di importanza.</p>
+<img alt="../_images/int_3.png" src="../_images/int_3.png" />
+<p>Un esempio di utilizzo: previsione di acquisti da parte di consumatori. Negozi distanti hanno poca influenza sui compratori, perché questi preferisono comprare vicino casa.</p>
+</div>
+<div class="section" id="tin">
+<h2>TIN<a class="headerlink" href="#tin" title="Permalink to this headline">¶</a></h2>
+<p>Crea una superficie di triangoli in modo che la circonferenza che passa per i 3 vertici di ogni triangolo non contiene nessun verticie di altri triangoli adiacenti.</p>
+<img alt="../_images/int_4.png" class="align-center" src="../_images/int_4.png" />
+<p>Il risultato è un layer irregolare con una serie di triangoli contenenti le informazioni dei dati in input.</p>
+<img alt="../_images/int_5.png" class="align-center" src="../_images/int_5.png" />
+</div>
+<div class="section" id="natural-neighbour">
+<h2>Natural neighbour<a class="headerlink" href="#natural-neighbour" title="Permalink to this headline">¶</a></h2>
+<p>Tecnica simile a IDW. Si assume infatti che ogni punto abbia una <em>sfera di influenza</em> nello spazio circostante. È di fatto una media pesata in cui i pesi sono definiti dalla porzione di area utilizzata di ogni poligono di Voronoi.</p>
+<img alt="../_images/int_6.png" class="align-center" src="../_images/int_6.png" />
+</div>
+<div class="section" id="spline">
+<h2>Spline<a class="headerlink" href="#spline" title="Permalink to this headline">¶</a></h2>
+<p>Spline esegue una stima dei valori attraverso una funzione matematica (applicata ai dati misurati nel vicinato) che minimizza la curvatura, dando origine ad una superficie molto smussata (simula uno strato di gomma che si conforma ai dati di input).
+Dal momento che è una tecnica <strong>non lineare</strong> ed esatta, è molto adatta a superfici con una variabilità debole (temperature, superfici piezometriche, concentrazioni di inquinanti...).</p>
+<a class="reference internal image-reference" href="../_images/int_7.png"><img alt="../_images/int_7.png" class="align-center" src="../_images/int_7.png" style="width: 342.0px; height: 193.8px;" /></a>
+<img alt="../_images/int_8.png" class="align-center" src="../_images/int_8.png" />
+</div>
+<div class="section" id="moving-average">
+<h2>Moving average<a class="headerlink" href="#moving-average" title="Permalink to this headline">¶</a></h2>
+<p>Il valore ignoto è pari alla media aritmetica dei valori rilevati in un numero predefinito nell&#8217;intorno (i 2 più vicini, i 3 più vicini, ecc...).</p>
+</div>
+<div class="section" id="nearest-neighbor">
+<h2>Nearest neighbor<a class="headerlink" href="#nearest-neighbor" title="Permalink to this headline">¶</a></h2>
+<p>La variabili ignota prende il valore del punto più vicino. Molto semplice, ma può causare errori anche grossolani.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Interpolazione</a><ul>
+<li><a class="reference internal" href="#idw">IDW</a></li>
+<li><a class="reference internal" href="#tin">TIN</a></li>
+<li><a class="reference internal" href="#natural-neighbour">Natural neighbour</a></li>
+<li><a class="reference internal" href="#spline">Spline</a></li>
+<li><a class="reference internal" href="#moving-average">Moving average</a></li>
+<li><a class="reference internal" href="#nearest-neighbor">Nearest neighbor</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="geostatistica.html"
+                        title="previous chapter">Geostatistica</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="documentazione.html"
+                        title="next chapter">Documentazione</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/source/interpolazione.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="documentazione.html" title="Documentazione"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="geostatistica.html" title="Geostatistica"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">QGISbase 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, matteo.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Proiezioni &mdash; QGISbase 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="QGISbase 1.0 documentation" href="../index.html" />
+    <link rel="next" title="Tipologie dati" href="dati.html" />
+    <link rel="prev" title="Sistemi Informativi Geografici (GIS)" href="introGIS.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="dati.html" title="Tipologie dati"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introGIS.html" title="Sistemi Informativi Geografici (GIS)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">QGISbase 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="proiezioni">
+<h1>Proiezioni<a class="headerlink" href="#proiezioni" title="Permalink to this headline">¶</a></h1>
+<p>Agli inizi della cartografia il problema principale era quello di trovare un solido che rappresentasse la forma della Terra.
+Si è arrivati a definire il <strong>geoide</strong>, ovvero un solido la cui superficie rappresenta un campo gravitazione equipotenziale:</p>
+<a class="reference internal image-reference" href="../_images/geoide.jpg"><img alt="../_images/geoide.jpg" src="../_images/geoide.jpg" style="width: 420.0px; height: 385.0px;" /></a>
+<p>Vista la difficoltà di utilizzo di un geoide (le equazioni matematiche che lo descrivono sono molto complesse), si usa un solido più semplice e che si avvicina molto alla forma della Terra, l&#8217;<strong>ellissoide</strong>:</p>
+<img alt="../_images/geoide_2.jpg" src="../_images/geoide_2.jpg" />
+<p>Un altro enorme problema è quello di rappresentare la superficie terrestre su un piano; infatti non è possibile <em>schiacciare</em> una sfera e un&#8217;operazione di questo tipo comporta inevitabilmente delle deformazioni.</p>
+<a class="reference internal image-reference" href="../_images/proiezione_1.png"><img alt="../_images/proiezione_1.png" src="../_images/proiezione_1.png" style="width: 490.0px; height: 254.8px;" /></a>
+<p>Il problema fondamentale quindi è quello di posizionare un oggetto nello spazio, ma in uno spazio preciso!
+Attraverso l&#8217;uso delle coordinate è possibile definire in maniera univoca la posizione di un oggetto.
+Si, ma rispetto a che cosa?</p>
+<p>Entrano cosi in gioco i <strong>sistemi di riferimento</strong>, ovvero un metodo per indicare la posizione rispetto a dei punti noti.</p>
+<p>Esistono due grandi famiglie di sistemi di riferimento di coordinate:</p>
+<ul class="simple">
+<li><strong>Geografici</strong></li>
+<li><strong>Chilometrici</strong> o <strong>Proiettati</strong></li>
+</ul>
+<div class="section" id="sistema-di-riferimento-geografico">
+<h2>Sistema di riferimento geografico<a class="headerlink" href="#sistema-di-riferimento-geografico" title="Permalink to this headline">¶</a></h2>
+<p>L&#8217;uso di questi sistemi è molto frequente. Ogni punto è descritto da una <strong>latitudine</strong> e una <strong>longitudine</strong> (occasionalmente anche da una quota).
+Questo modo di identificare un oggetto è relativamente semplice: infatti sono le misure degli angoli di quell&#8217;oggetto rispetto all&#8217;ellissoide di riferimento:</p>
+<img alt="../_images/geographic_1.jpg" src="../_images/geographic_1.jpg" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">ci sono decine di ellissoidi, quindi è importante comunicare a quale si sta facendo riferimento.</p>
+</div>
+<p>Le misure di questi angoli si riferiscono a un parallelo e a un meridiano di riferimento, <strong>equatore</strong> e <strong>Greenwich</strong>:</p>
+<img alt="../_images/meridiani_paralleli.jpg" src="../_images/meridiani_paralleli.jpg" />
+<p>Quindi in poche parole, un sistema di riferimento geografico permette di identificare la posizione di un oggetto in funzione della sua distanza angolare rispetto all&#8217;equatore al meridiano centrale di Greenwich.</p>
+<p>Visto che la posizione è misurata in angoli, le <strong>coordinate</strong> saranno espresse in <strong>gradi</strong> o sue frazioni:</p>
+<ul class="simple">
+<li>12° 13&#8217; 14&#8221; (DMS)</li>
+<li>12° 13,4&#8217; (DM)</li>
+<li>45,21° (DD)</li>
+</ul>
+<p>L&#8217;ellissoide maggiormente utilizzato (GPS, Google, Wikipedia, ecc...) è il <strong>WGS84</strong>, un ellissoide geocentrico, ovvero il cui centro corrisponde con il centro della Terra.</p>
+</div>
+<div class="section" id="sistema-di-riferimento-chilometrico">
+<h2>Sistema di riferimento chilometrico<a class="headerlink" href="#sistema-di-riferimento-chilometrico" title="Permalink to this headline">¶</a></h2>
+<p>Questo tipo di sistema di riferimento permette di rappresentare sul piano una porzione della superficie terrestre. Quindi ci permette di calcolare effettivamente le distanze metriche fra due punti proprio perché la superficie della Terra è ora proiettata su un piano bi-dimensionale.</p>
+<p>Il metodo prende il nome di <strong>proiezioni</strong>:</p>
+<img alt="../_images/proiezione_2.png" src="../_images/proiezione_2.png" />
+<p>Una proiezioni largamente utilizzata è la <strong>UTM</strong> (Universal transverse Mercator):</p>
+<a class="reference internal image-reference" href="../_images/mercatore.png"><img alt="../_images/mercatore.png" src="../_images/mercatore.png" style="width: 424.9px; height: 249.9px;" /></a>
+<p>In pratica, una volta deciso l&#8217;ellissodie da usare per rappresentare la Terra, questo viene avvolto in un cilindro il cui lato maggiore è tangente all&#8217;equatore.</p>
+<p>Fatto questo, è possibile <em>proiettare</em> la Terra su un piano e <em>srotolare</em> il cilindro.
+Per limitare le deformazioni la superficie viene divisa in 60 &#8220;spicchi&#8221; chiamati <strong>fusi</strong>, ognuno largo 6° e numerati in modo crescente a partire dall&#8217;<strong>antimeridiano</strong> di Greenwich.
+Nel sistema UTM l&#8217;Italia ricade nei fusi 32, 33 e 34.</p>
+<p>La Terra è divisa anche in senso longitudinale in 20 fasce (T se a Nord dell&#8217;equatore, S se a sud).</p>
+<p>Per identificare un sistema di riferimento è quindi necessario richiamare il <strong>Datum</strong>. Il <strong>Datum</strong> è l&#8217;insieme di tutte le informazioni della proiezione che abbiamo usato: tipo di ellissoide, localizzazione e centramento dell&#8217;ellissoide e tipo di proiezione. Per esempio UTM-WGS84, UTM-ED50,...</p>
+<img alt="../_images/geoide_3.png" src="../_images/geoide_3.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">conoscendo i sistemi di riferimento si possono convertire i dati senza problemi (semplici operazioni matematiche)</p>
+</div>
+<div class="section" id="codici-epsg">
+<h3>Codici EPSG<a class="headerlink" href="#codici-epsg" title="Permalink to this headline">¶</a></h3>
+<p>Per limitare le deformazioni e approssimare al meglio le distanze, praticamente ogni nazione ha il proprio sistema di riferimento. Molto spesso anche più di uno.</p>
+<p>Vista la moltitudine di sistemi di riferimento (QGIS ne supporta quasi 3000), è stato necessario assegnare un codice univoco a ciascuno di essi per poterli identificare semplicemente.</p>
+<p>La <a class="reference external" href="http://www.epsg-registry.org/">Europen Petroleum Survey Group</a> cataloga e definisce i sistemi di riferimento descrivendoli e accompagnadoli a un codice identificativo <strong>EPSG</strong>.</p>
+</div>
+<div class="section" id="sistemi-usati-in-italia">
+<h3>Sistemi usati in Italia<a class="headerlink" href="#sistemi-usati-in-italia" title="Permalink to this headline">¶</a></h3>
+<p>Dal momento che la distorsione è tanto maggiore quanto maggiore è la superficie della Terra interessata, col tempo ogni Stato ha adottato un proprio sistema di riferimento centrando l&#8217;ellissoide nel proprio territorio in modo da minimizzare gli errori.</p>
+<p>Lista di sistemi maggiormente utilizzati:</p>
+<ul class="simple">
+<li>Gauss-Boaga (fuso est e ovest) (EPSG 3003, 3004)</li>
+<li>Cassini Soldner (EPSG 9806)</li>
+<li>UTM- WGS84 (EPSG 32632, 32633)</li>
+<li>UTM-ED50 (EPSG 23032, 23033)</li>
+<li>UTM-ETRS (EPSG 25832, 25833)</li>
+<li>WGS84 (geografico) (EPSG 4326)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">è fondamentale per ogni dato geografico che si vuole caricare, che questo sia accompagnato dalla sua informazione spaziale. Se questa informazione manca, si rischia di fare delle analisi sbagliate.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Proiezioni</a><ul>
+<li><a class="reference internal" href="#sistema-di-riferimento-geografico">Sistema di riferimento geografico</a></li>
+<li><a class="reference internal" href="#sistema-di-riferimento-chilometrico">Sistema di riferimento chilometrico</a><ul>
+<li><a class="reference internal" href="#codici-epsg">Codici EPSG</a></li>
+<li><a class="reference internal" href="#sistemi-usati-in-italia">Sistemi usati in Italia</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introGIS.html"
+                        title="previous chapter">Sistemi Informativi Geografici (GIS)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dati.html"
+                        title="next chapter">Tipologie dati</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/source/proiezioni.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="dati.html" title="Tipologie dati"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introGIS.html" title="Sistemi Informativi Geografici (GIS)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">QGISbase 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, matteo.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+    </div>
+  </body>
+</html>
