@@ -6,8 +6,6 @@
 Welcome to QGISbase's documentation!
 ====================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
@@ -19,5 +17,7 @@ Contents:
    source/5_simboli_vettore.rst
    source/6_geostatistica.rst
    source/7_interpolazione.rst
+   source/7_1_interpolazione_det.rst
    source/8_documentazione.rst
    source/A1_installazione_3_parti.rst
+   source/A2_termini_geostatistica.rst
