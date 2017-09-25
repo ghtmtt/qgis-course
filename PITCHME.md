@@ -149,7 +149,7 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
 ---
 ## Sistemi di riferimento proiettati in Italia
 
-![Immagine](assets/proj_pro5.png) <!-- .element: style="height:50%;width:50%;"-->
+![Immagine](assets/proj_pro5.png) <!-- .element: style="height:60%;width:60%;"-->
 ---
 
 
@@ -160,6 +160,8 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
 * molti siti in cui trovare informazioni
 
 ![Immagine](assets/epsg.png) <!-- .element: style="height:60%;width:60%;"-->
+
+---
 
 
 
