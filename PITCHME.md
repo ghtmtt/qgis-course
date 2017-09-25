@@ -10,6 +10,8 @@
 - stringhe tradotte subito salvate <!-- .element: class="fragment" data-fragment-index="2" -->
 - possibilità di tradurre offline <!-- .element: class="fragment" data-fragment-index="3" -->
 
+#VSLIDE?image=faunalia.png
+
 ---
 
 ## Transifex Pro
