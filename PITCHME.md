@@ -146,9 +146,12 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
     <li class="fragment" data-fragment-index="6">WGS84 (geografico) (EPSG 4326) </li>
 </ul>
 
-![Immagine](assets/proj_pro5.png) <!-- .element: class="fragment" data-fragment-index="7" style="height:60%;width:60%;"-->
-
 ---
+## Sistemi di riferimento proiettati in Italia
+
+![Immagine](assets/proj_pro5.png) <!-- .element: style="height:60%;width:60%;"-->
+---
+
 
 ## Codici EPSG
 
