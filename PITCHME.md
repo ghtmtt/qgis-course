@@ -58,20 +58,20 @@
 
 ## Sistemi di riferimento geografici
 
-* uso frequente (GPS) <!-- .element: class="fragment" data-fragment-index="1" -->
-* misure come angoli rispetto a ellissoide <!-- .element: class="fragment" data-fragment-index="2" -->
+* uso frequente (GPS) | 
+* misure come angoli rispetto a ellissoide |
     
-    * rispetto a meridiano e parallelo di riferimento <!-- .element: class="fragment" data-fragment-index="3" -->
-    * Greenwich e Equatore <!-- .element: class="fragment" data-fragment-index="4" -->
+    * rispetto a meridiano e parallelo di riferimento |
+    * Greenwich e Equatore |
     
-* WGS84 ellissoide più comune <!-- .element: class="fragment" data-fragment-index="5" --> 
+* WGS84 ellissoide più comune | 
 
 
 ---
 
 ## Sistemi di riferimento geografici
 
-![Immagine](assets/proj_geo.png) <!-- .element: style="height:30%;width:30%;"-->
+![Immagine](assets/proj_geo.png)
 ---
 
 ## Sistemi di riferimento geografici
@@ -91,7 +91,7 @@
     <li class="fragment" data-fragment-index="3">coordinate **metriche** (N4700567, E350657)</li>
 </ul>
 
-![Immagine](assets/proj_pro.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:30%;width:30%;"-->
+![Immagine](assets/proj_pro.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:40%;width:40%;"-->
 
 ---
 
@@ -99,7 +99,7 @@
 
 Proiezioni diverse per scopi diversi (aree, distanze...)
 
-![Immagine](assets/proj_pro2.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:30%;width:30%;"-->
+![Immagine](assets/proj_pro2.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:40%;width:40%;"-->
 
 ---
 
@@ -114,7 +114,7 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
     <li class="fragment" data-fragment-index="4">distorsioni minori se locale</li>
 </ul>
 
-![Immagine](assets/proj_pro3.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:30%;width:30%;"-->
+![Immagine](assets/proj_pro3.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:40%;width:40%;"-->
 
 ---
 
@@ -128,7 +128,7 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
 
 ![Immagine](assets/proj_pro3.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:30%;width:30%;"-->
 
-[true size](https://thetruesize.com/#?borders=1~!MTc2NzA1Mjc.MTM2NzgwNA*MzYwMDAwMDA(MA~!GL*MA.MTgwMDAwMDA)Mw)
+[true size](https://thetruesize.com/#?borders=1~!MTY0MjQzNjY.NDU5OTYxOA*MzU3MDExNzI(MjE5NzI2Ng~!GL*OTYyOTE4Nw.MjkyNzU4MzY)
 
 ---
 
