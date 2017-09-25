@@ -72,11 +72,22 @@
 * 3 tipologie: punti, linee, poligoni) <!-- .element: class="fragment" data-fragment-index="2" -->
 * ogni geometria dell'oggetto ha attributi (caratteristiche) <!-- .element: class="fragment" data-fragment-index="3" -->
 
-![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:60%;width:60%;"-->
+![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:65%;width:65%;"-->
 
 ---
 
+### Vettori
 
+* formato più diffuso è <span style="bold">Database</span> <!-- .element: class="fragment" data-fragment-index="1" -->
+
+    * almeno 3 file diversi (layer.shp, layer.shx, layer.dbf)
+    * altri file aggiuntivi (layer.prj, layer.cgc, layer.qpj)
+    
+* tanti altri formati disponibili <!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+
+---
 
 
 
