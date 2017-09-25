@@ -168,7 +168,7 @@ Map Algebra
     <li class="fragment" class="fragment" data-fragment-index="4">trasformazione da un formato all'altro</li>
 </ul>
 
-![Immagine](assets/vecrast2.jpg) <!-- .element: class="fragment" data-fragment-index="5" style="height:30%;width:30%;"-->
+![Immagine](assets/vecrast2.jpg) <!-- .element: class="fragment" data-fragment-index="5" style="height:35%;width:35%;"-->
 
 ---
 
