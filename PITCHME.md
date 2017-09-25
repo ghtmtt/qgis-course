@@ -1,11 +1,9 @@
 # Geographic Free Open Source Software
 
----
 
 ### Geographic Informative System
 
-
----?image=assets/gis1.png
+<img src="image=assets/gis1.png" heigth="200" width="250">
 
 ---
 
