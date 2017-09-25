@@ -78,7 +78,7 @@
 
 ### Vettori
 
-* formato più diffuso è <span style="bold">Database</span> <!-- .element: class="fragment" data-fragment-index="1" -->
+* formato più diffuso è <span style="font-weight: bold;">ESRI shapefile</span> <!-- .element: class="fragment" data-fragment-index="1" -->
 
     * almeno 3 file diversi (layer.shp, layer.shx, layer.dbf)
     * altri file aggiuntivi (layer.prj, layer.cgc, layer.qpj)
