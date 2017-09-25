@@ -115,7 +115,7 @@ Simbologia in funzione degli attributi
 
 ### Vettori
 
-![Immagine](assets/vec6.png)
+![Immagine](assets/map.png)
 
 ---
 
@@ -168,7 +168,7 @@ Map Algebra
     <li class="fragment" class="fragment" data-fragment-index="4">trasformazione da un formato all'altro</li>
 </ul>
 
-![Immagine](assets/vecrast2.jpg)
+![Immagine](assets/vecrast2.jpg) <!-- .element: class="fragment" data-fragment-index="5" style="height:40%;width:40%;"-->
 
 ---
 
