@@ -78,13 +78,13 @@
 
 ### Vettori
 
-
+<ul>
 <li class="fragment">formato più diffuso è **ESRI shapefile**</li>
 
-    * almeno 3 file diversi (layer.shp, layer.shx, layer.dbf) |
-    * altri file aggiuntivi (layer.prj, layer.cgc, layer.qpj) |
-    
-* tanti altri formati disponibili |
+<li class="fragment">  almeno 3 file diversi (layer.shp, layer.shx, layer.dbf) </li>
+<li class="fragment">altri file aggiuntivi (layer.prj, layer.cgc, layer.qpj) </li>
+<li class="fragment">tanti altri formati disponibili </li>
+</ul>
 
 ---
 
