@@ -5,7 +5,9 @@
 ## Geographic Informative System
 
 
-![Logo](assets/gis1.jpg)
+![Logo](assets/gis1.png)
+
+---
 
 
 
