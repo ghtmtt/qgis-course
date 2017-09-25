@@ -71,8 +71,9 @@
 * oggetti spaziali definiti da equazioni matematiche <!-- .element: class="fragment" data-fragment-index="1" -->
 * 3 tipologie: punti, linee, poligoni) <!-- .element: class="fragment" data-fragment-index="2" -->
 * ogni geometria dell'oggetto ha attributi (caratteristiche) <!-- .element: class="fragment" data-fragment-index="3" -->
+* indipendenti dalla risoluzione <!-- .element: class="fragment" data-fragment-index="4" -->
 
-![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:65%;width:65%;"-->
+![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:65%;width:65%;"-->
 
 ---
 
@@ -90,29 +91,86 @@
 ![Immagine](assets/vec2.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:35%;width:35%;"-->
 ---
 
+### Vettori
+
+![Immagine](assets/vec3.png) 
+
+---
+
+### Vettori
+
+Filtraggio della tabella degli attributi
+
+![Immagine](assets/vec4.png) 
+
+---
+
+### Vettori
+
+Simbologia in funzione degli attributi
+
+![Immagine](assets/vec5.png)
+
+---
+
+### Vettori
+
+![Immagine](assets/vec6.png)
+
+---
+
+### Vettori
+
+Digitalizzazione
+
+![Immagine](assets/vec7.png)
+
+---
+
+### Raster
+
+* immagini vere e proprie
+* dipendenti dalla risoluzione
+* singolo pixel ha informazione numerica (matrice)
+* elevazione terreno, concentrazione
+* adatti per informazioni continue nello spazio
+* tantissimi formati: jpeg, png, tiff, geotiff...
+
+---
+
+### Raster
+
+![Immagine](assets/rast.png)
+
+---
+
+### Raster
+
+![Immagine](assets/rast2.png)
+
+---
 
 
+### Raster
 
+Map Algebra
 
+![Immagine](assets/rast3.jpeg)
 
+---
 
+### Vettori o Raster?
 
+<ul>
+    <li class="fragment" data-fragment-index="1">dati **complementari e non esclusivi**</li>
+    <li class="fragment" data-fragment-index="2"> vettori per info **puntuali**</li>
+    <li class="fragment" data-fragment-index="3">raster per informazioni **precise**</li>
+    <li class="fragment" class="fragment" data-fragment-index="4">trasformazione da un formato all'altro</li>
+</ul>
 
+![Immagine](assets/vecrast2.jpg)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
