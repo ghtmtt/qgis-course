@@ -2,100 +2,61 @@
 
 ---
 
-### Geographic Informative System
+#### Geographic Informative System
 
 
 ![Immagine](assets/gis1.png)
 
 ---
 
+#### Geographic Informative System
 
 
-
-
-## Transifex
-
-- iscrizione e traduzione immediata delle stringhe <!-- .element: class="fragment" data-fragment-index="1" -->
-- stringhe tradotte subito salvate <!-- .element: class="fragment" data-fragment-index="2" -->
-- possibilità di tradurre offline <!-- .element: class="fragment" data-fragment-index="3" -->
-
-#VSLIDE?image=faunalia.png
+![Immagine](assets/gis2.png)
 
 ---
 
-## Transifex Pro
+#### Geographic Informative System
 
-- rapidità e immediatezza |
-- stringhe centralizzate in unico posto |
-- possibilità di ricerca concordanza fra varie risorse |
-- congelamento stringhe dopo revisione |
 
+![Immagine](assets/gis3.png)
 
 ---
 
-## Transifex Contro
+#### GeographicLESS workflow
 
-- difficoltà di trovare il contesto |
-- interfaccia traduzione troppo ricca |
-- richiede un minimo di pratica |
 
----
-
-### Stato della traduzione
+![Immagine](assets/gis4.png)
 
 ---
 
-## QGIS Desktop (GUI)
+#### GeographicLESS workflow
 
-- 18.050 stringhe totali |
-- 99% stringhe tradotte: continuo aggiornamento di funzionalità -> continuo cambiamento stringhe |
-- 6102 stringhe da revisionare: in realtà sono 15.00 per armonizzare l'insieme |
-- tradotte 2041 stringhe anno solare 2017 |
+
+![Immagine](assets/gis5.png)
 
 ---
 
-## QGIS Documentation
+#### GeographicLESS workflow
 
-- 26.855 stringhe da tradurre |
-- suddivisione in molti file diversi |
-- aggiornamento continuo del manuale upstream |
-- molti algoritmi non tradotti sono algoritmi di provider di Processing (SAGA, GDAL, TauDem...) |
+
+![Immagine](assets/gis6.png)
 
 ---
 
-## QGIS Web
+#### GeographicLESS workflow
 
-- 3.849 stringhe da tradurre |
-- suddivisione molti file diversi |
-- % completamento bassa a causa dei molti casi di studio |
 
----
-
-### Considerazioni generali sulla traduzione (1)
-
-- attività in crescita nell'ultimo periodo (ottimo!) |
-- se in dubbio su terminologia o contesto è meglio NON tradurre |
-- difficoltà di revisione e ricerca concordanza: |
-    - terminologia uguale in manuale, web e GUI |
-    - Tx aiuta con la funzione di riceca concordanza |
-    - Tx non aiuta a capire il contesto |
-- ricco glossario da utilizzare |
+![Immagine](assets/gis7.png)
 
 ---
 
-### Considerazioni generali sulla traduzione (2)
+## Tipologie dati GIS
 
-- la conscenza dell'inglese è necessaria: se non si è sicuri della terminologia, chiedere in lista. È più complicato correggere che tradurre |
-- se si trovano degli errori, segnalarli alla comunità! Correggerli è banale, scovarli no |
-- partecipare alle discussioni sulla terminologia sulla lista, l'opinione di tutti è importante |
-
-
-
+* **Vettori** (via OGR)
+* **Raster** (via GDAL)
+* <span style=color:gray">Database</span>
+* <span style=color:gray">Servizi Web (WMS, WFS...)</span>
 
 
-
-
-
-
-
-
+---
