@@ -79,11 +79,12 @@
 ### Vettori
 
 <ul>
-<li class="fragment">formato più diffuso è **ESRI shapefile**</li>
-
-<li class="fragment">  almeno 3 file diversi (layer.shp, layer.shx, layer.dbf) </li>
-<li class="fragment">altri file aggiuntivi (layer.prj, layer.cgc, layer.qpj) </li>
-<li class="fragment">tanti altri formati disponibili </li>
+    <li class="fragment">formato più diffuso è **ESRI shapefile**</li>
+        <ul>
+        <li class="fragment">  almeno 3 file diversi (layer.shp, layer.shx, layer.dbf) </li>
+        <li class="fragment">altri file aggiuntivi (layer.prj, layer.cgc, layer.qpj) </li>
+        </ul>
+    <li class="fragment">tanti altri formati disponibili </li>
 </ul>
 
 ---
