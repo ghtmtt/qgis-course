@@ -10,7 +10,7 @@
 
 ## Proiezioni
 
-Geoide
+### Geoide
 
 * solido che meglio rappresenta la Terra
 * superficie equipotenziale
