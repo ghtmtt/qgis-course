@@ -115,7 +115,7 @@ Simbologia in funzione degli attributi
 
 ### Vettori
 
-![Immagine](assets/map.png)
+![Immagine](assets/map.png) <!-- .element: style="height:40%;width:40%;"-->
 
 ---
 
