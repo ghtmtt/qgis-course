@@ -87,7 +87,7 @@
     <li class="fragment">tanti altri formati disponibili </li>
 </ul>
 
-![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:65%;width:65%;"-->
+![Immagine](assets/vec2.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:65%;width:65%;"-->
 ---
 
 
