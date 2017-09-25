@@ -129,7 +129,7 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
     <li class="fragment" data-fragment-index="3">gradi distorsioni a latitudini elevate</li>
 </ul>
 
-![Immagine](assets/proj_pro4.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:30%;width:30%;"-->
+![Immagine](assets/proj_pro4.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:60%;width:60%;"-->
 
 [true size](https://thetruesize.com/#?borders=1~!MTY0MjQzNjY.NDU5OTYxOA*MzU3MDExNzI(MjE5NzI2Ng~!GL*OTYyOTE4Nw.MjkyNzU4MzY)
 
