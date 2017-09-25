@@ -16,6 +16,6 @@ Geoide
 * superficie equipotenziale
 * equazioni molto complesse
 
-![Immagine](assets/proj.png)
+![Immagine](assets/proj2.png)
 
 ---
