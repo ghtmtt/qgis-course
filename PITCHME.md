@@ -42,7 +42,7 @@
 
 ### Localizzare oggetti nello spazio
 
-![Immagine](assets/proj5.png)
+![Immagine](assets/proj5.jpeg) <!-- .element: style="height:40%;width:40%;"-->
 
 ---
 
@@ -66,8 +66,12 @@
     
 * WGS84 ellissoide più comune <!-- .element: class="fragment" data-fragment-index="5" --> 
 
-![Immagine](assets/proj_geo.png) <!-- .element: class="fragment" data-fragment-index="6" style="height:30%;width:30%;"-->
 
+---
+
+## Sistemi di riferimento geografici
+
+![Immagine](assets/proj_geo.png) <!-- .element: style="height:30%;width:30%;"-->
 ---
 
 ## Sistemi di riferimento geografici
@@ -81,9 +85,6 @@
 
 ## Sistemi di riferimento proiettati
 
-* rappresentazione Terra (3D) su piano (2D)
-* distanze 
-
 <ul>
     <li class="fragment" data-fragment-index="1">rappresentazione Terra (3D) su piano (2D)</li>
     <li class="fragment" data-fragment-index="2">distanze **metriche** </li>
@@ -96,7 +97,7 @@
 
 ## Sistemi di riferimento proiettati
 
-### Proiezioni diverse per scopi diversi (aree, distanze...)
+Proiezioni diverse per scopi diversi (aree, distanze...)
 
 ![Immagine](assets/proj_pro2.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:30%;width:30%;"-->
 
@@ -127,7 +128,7 @@
 
 ![Immagine](assets/proj_pro3.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:30%;width:30%;"-->
 
-![true size](https://thetruesize.com/#?borders=1~!MTc2NzA1Mjc.MTM2NzgwNA*MzYwMDAwMDA(MA~!GL*MA.MTgwMDAwMDA)Mw)
+[true size](https://thetruesize.com/#?borders=1~!MTc2NzA1Mjc.MTM2NzgwNA*MzYwMDAwMDA(MA~!GL*MA.MTgwMDAwMDA)Mw)
 
 ---
 
