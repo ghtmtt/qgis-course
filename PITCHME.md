@@ -1,5 +1,3 @@
----?image=qgis.png
-
 # Geographic Free Open Source Software
 
 
