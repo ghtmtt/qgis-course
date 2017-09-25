@@ -6,9 +6,9 @@
 
 ## Transifex
 
-- iscrizione e traduzione immediata delle stringhe |
-- stringhe tradotte subito salvate |
-- possibilità di tradurre offline |
+- iscrizione e traduzione immediata delle stringhe <!-- .element: class="fragment" data-fragment-index="1" -->
+- stringhe tradotte subito salvate <!-- .element: class="fragment" data-fragment-index="2" -->
+- possibilità di tradurre offline <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
