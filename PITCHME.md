@@ -1,6 +1,6 @@
 # Geographic Free Open Source Software
 
----?image=faunalia.png
+?image=faunalia.png
 
 ---
 
