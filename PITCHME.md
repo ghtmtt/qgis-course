@@ -79,15 +79,15 @@
 ### Vettori
 
 <ul>
-    <li class="fragment">formato più diffuso è **ESRI shapefile**</li>
+    <li class="fragment" data-fragment-index="1">formato più diffuso è **ESRI shapefile**</li>
         <ul>
-        <li class="fragment">  almeno 3 file diversi (layer.shp, layer.shx, layer.dbf) </li>
-        <li class="fragment">altri file aggiuntivi (layer.prj, layer.cgc, layer.qpj) </li>
+        <li class="fragment" data-fragment-index="2">  almeno 3 file diversi (layer.shp, layer.shx, layer.dbf) </li>
+        <li class="fragment" data-fragment-index="3">altri file aggiuntivi (layer.prj, layer.cgc, layer.qpj) </li>
         </ul>
-    <li class="fragment">tanti altri formati disponibili </li>
+    <li class="fragment" class="fragment" data-fragment-index="4">tanti altri formati disponibili </li>
 </ul>
 
-![Immagine](assets/vec2.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:65%;width:65%;"-->
+![Immagine](assets/vec2.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:35%;width:35%;"-->
 ---
 
 
