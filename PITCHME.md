@@ -58,13 +58,16 @@
 
 ## Sistemi di riferimento geografici
 
-* uso frequente (GPS) | 
-* misure come angoli rispetto a ellissoide |
-    
-    * rispetto a meridiano e parallelo di riferimento |
-    * Greenwich e Equatore |
-    
-* WGS84 ellissoide più comune | 
+
+<ul>
+    <li class="fragment" data-fragment-index="1">uso frequente (GPS)</li>
+    <li class="fragment" data-fragment-index="2">misure come angoli rispetto a ellissoide</li>
+        <ul>
+        <li class="fragment" data-fragment-index="3">rispetto a meridiano e parallelo di riferimento</li>
+        <li class="fragment" data-fragment-index="4">Greenwich e Equatore</li>
+        </ul>
+    <li class="fragment" data-fragment-index="5">WGS84 ellissoide più comune</li>
+</ul>
 
 
 ---
@@ -91,7 +94,7 @@
     <li class="fragment" data-fragment-index="3">coordinate **metriche** (N4700567, E350657)</li>
 </ul>
 
-![Immagine](assets/proj_pro.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:40%;width:40%;"-->
+![Immagine](assets/proj_pro.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:50%;width:50%;"-->
 
 ---
 
