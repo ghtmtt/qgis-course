@@ -1,5 +1,6 @@
-# Stato della traduzione di QGIS 3
+# Geographic Free Open Source Software
 
+---?image=faunalia.png
 
 ---
 
