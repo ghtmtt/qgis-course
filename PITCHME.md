@@ -135,14 +135,30 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
 
 ---
 
+## Sistemi di riferimento proiettati in Italia
 
+<ul>
+    <li class="fragment" data-fragment-index="1">Gauss-Boaga (fuso est e ovest) (EPSG 3003, 3004)</li>
+    <li class="fragment" data-fragment-index="2">Cassini Soldner (EPSG 9806) </li>
+    <li class="fragment" data-fragment-index="3">UTM- WGS84 (EPSG 32632, 32633)</li>
+    <li class="fragment" data-fragment-index="4">UTM-ED50 (EPSG 23032, 23033)</li>
+    <li class="fragment" data-fragment-index="5">UTM-ETRS (EPSG 25832, 25833)</li>
+    <li class="fragment" data-fragment-index="6">WGS84 (geografico) (EPSG 4326) </li>
+</ul>
 
+![Immagine](assets/proj_pro5.png) <!-- .element: class="fragment" data-fragment-index="7" style="height:60%;width:60%;"-->
 
+---
 
+## Codici EPSG
 
+* codificazione migliaia di sistemi di riferimento
+* codice univoco e universale
+* molti siti in cui trovare informazioni
 
+![Immagine](assets/epsg.png) <!-- .element: style="height:60%;width:60%;"-->
 
-
+---
 
 
 
