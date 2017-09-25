@@ -55,8 +55,8 @@
 
 * **Vettori** (via OGR)
 * **Raster** (via GDAL)
-* <span style=color:gray">Database</span>
-* <span style=color:gray">Servizi Web (WMS, WFS...)</span>
+* <span style="color:gray">Database</span>
+* <span style="color:gray">Servizi Web (WMS, WFS...)</span>
 
 
 ---
