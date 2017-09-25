@@ -72,7 +72,7 @@
 * 3 tipologie: punti, linee, poligoni) <!-- .element: class="fragment" data-fragment-index="2" -->
 * ogni geometria dell'oggetto ha attributi (caratteristiche) <!-- .element: class="fragment" data-fragment-index="3" -->
 
-![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="4" style="max-height:70%;width:auto;"-->
+![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:30%;width:30%;"-->
 
 ---
 
