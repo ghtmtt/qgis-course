@@ -83,6 +83,22 @@
 
 ---
 
+## QGIS vs ArcGIS
+
+| QGIS                        | ArcGIS                   |
+|-----------------------------|--------------------------|
+| Dati supportati             | Dati inclusi             |
+| Simbologia enorme           | Statistiche su file      |
+| Plugin esterni              | Parziale supporto 3D     |
+| Modellatore algoritmi       | Documentazione           |
+| Creazione stampe            | Versione base **3000 €** |
+| Web Mapping e QGIS server   |                          |
+| Integrazione altri software |                          |
+| **0€** (ma investire!)      |                          |
+
+
+---
+
 ## Risorse utili
 
 * guida utente (manuale), training manual, introduzione GIS [http://docs.qgis.org/2.18/it/docs/](http://docs.qgis.org/2.18/it/docs/)
