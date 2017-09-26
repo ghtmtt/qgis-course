@@ -90,3 +90,5 @@
 * codice sorgente pubblico [https://github.com/qgis/QGIS](https://github.com/qgis/QGIS)
 
 * altri tutorial [http://www.qgistutorials.com/it/](http://www.qgistutorials.com/it/)
+
+---
