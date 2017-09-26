@@ -1,177 +1,100 @@
 # Geographic Free Open Source Software
 
 ---
+## QGIS
 
-#### Geographic Informative System
-
-
-![Immagine](assets/gis1.png)
-
----
-
-#### Geographic Informative System
-
-
-![Immagine](assets/gis2.png)
+* creato nel 2002 in Alaska
+* ad oggi più di 40.000 modifiche di codice (giornaliere)
+* più di 200 sviluppatore (nessuno pagato da QGIS)
+* codice robusto
+* comunità molto attiva e *sana*
 
 ---
 
-#### Geographic Informative System
+## Perché QGIS
 
-
-![Immagine](assets/gis3.png)
-
----
-
-#### Dati NON geografici
-
-
-![Immagine](assets/gis4.png)
+* GIS open source più utilizzato nel mondo (in crescita)
+* richiesto da pubblici e aziende (è standard)
+* enorme support di file
+* multipiattaforma (Win, OSX e Linux)
+* espandibile con l'uso di plugin
+* integrazione con molti altri Software
 
 ---
 
-#### Aggiunta posizione dati
+## Open source
 
+### Vantaggi
 
-![Immagine](assets/gis5.png)
-
----
-
-#### Dati georeferenziati
-
-
-![Immagine](assets/gis6.png)
-
----
-
-#### Elaborazione geografica dati
-
-
-![Immagine](assets/gis7.png)
+* codice sorgente **libero**
+* aggiornamenti rapidi
+* velocità risoluzione problemi (chiunque può)
+* comunità molto attive
+* personalizzabile a piacimento
+* ottima compatibilità
 
 ---
 
-### Tipologie dati GIS
+## Open source
 
-* **Vettori** (via OGR)
-* **Raster** (via GDAL)
-* <span style="color:gray">Database</span>
-* <span style="color:gray">Servizi Web (WMS, WFS...)</span>
+### Svantaggi
+
+* comunemente demonizzati (gratis = scarso)
+* molti sono *giovani*
+
+---
+## Open source noti
+
+![Image](assets/open_source.png)
+
 
 ---
 
-### Vettori e Raster
+## Open source geografici
 
-![Immagine](assets/vecrast.png)
-
----
-
-### Vettori
-
-* oggetti spaziali definiti da equazioni matematiche <!-- .element: class="fragment" data-fragment-index="1" -->
-* 3 tipologie: punti, linee, poligoni) <!-- .element: class="fragment" data-fragment-index="2" -->
-* ogni geometria dell'oggetto ha attributi (caratteristiche) <!-- .element: class="fragment" data-fragment-index="3" -->
-* indipendenti dalla risoluzione <!-- .element: class="fragment" data-fragment-index="4" -->
-
-![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:65%;width:65%;"-->
+![Image](assets/open_source_geo.png)
 
 ---
 
-### Vettori
+## Closed source
 
-<ul>
-    <li class="fragment" data-fragment-index="1">formato più diffuso è **ESRI shapefile**</li>
-        <ul>
-        <li class="fragment" data-fragment-index="2">  almeno 3 file diversi (.shp, .shx, .dbf) </li>
-        <li class="fragment" data-fragment-index="3">altri file aggiuntivi (.prj, .cgc, .qpj) </li>
-        </ul>
-    <li class="fragment" class="fragment" data-fragment-index="4">tanti altri formati disponibili </li>
-</ul>
+### Vantaggi
 
-![Immagine](assets/vec2.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:35%;width:35%;"-->
----
-
-### Vettori
-
-![Immagine](assets/vec3.png) 
+* molto diffusi
+* arrivati molto tempo fa sul mercato
 
 ---
 
-### Vettori
+## Closed source
 
-Filtraggio della tabella degli attributi
+### Svantaggi
 
-![Immagine](assets/vec4.png) 
-
----
-
-### Vettori
-
-Simbologia in funzione degli attributi
-
-![Immagine](assets/vec5.png)
+* **prigionia** di decisioni altrui
+* costi molto elevati
+* mantenimento nel tempo costoso
+* personalizzazione difficle
+* codice chiuso a chiunque
 
 ---
 
-### Vettori
+---
 
-![Immagine](assets/map.png) <!-- .element: style="height:40%;width:40%;"-->
+## Closed source
+
+![Image](assets/closed_source.png)
 
 ---
 
-### Vettori
+## Risorse utili
 
-Digitalizzazione
+* guida utente (manuale), training manual, introduzione GIS
 
-![Immagine](assets/vec7.png)
+[http://docs.qgis.org/2.18/it/docs/](http://docs.qgis.org/2.18/it/docs/)
 
----
+* codice sorgente pubblico
 
-### Raster
+[https://github.com/qgis/QGIS](https://github.com/qgis/QGIS)
 
-* immagini vere e proprie
-* dipendenti dalla risoluzione
-* singolo pixel ha informazione numerica (matrice)
-* elevazione terreno, concentrazione
-* adatti per informazioni continue nello spazio
-* tantissimi formati: jpeg, png, tiff, geotiff...
+* altri tutorial
 
----
-
-### Raster
-
-![Immagine](assets/rast.png)
-
----
-
-### Raster
-
-![Immagine](assets/rast2.png)
-
----
-
-
-### Raster
-
-Map Algebra
-
-![Immagine](assets/rast3.jpeg)
-
----
-
-### Vettori o Raster?
-
-<ul>
-    <li class="fragment" data-fragment-index="1">dati **complementari e non esclusivi**</li>
-    <li class="fragment" data-fragment-index="2"> vettori per info **puntuali**</li>
-    <li class="fragment" data-fragment-index="3">raster per informazioni **precise**</li>
-    <li class="fragment" class="fragment" data-fragment-index="4">trasformazione da un formato all'altro</li>
-</ul>
-
-![Immagine](assets/vecrast2.jpg) <!-- .element: class="fragment" data-fragment-index="5" style="height:35%;width:35%;"-->
-
----
-
-
-
-
+[http://www.qgistutorials.com/it/](http://www.qgistutorials.com/it/)
