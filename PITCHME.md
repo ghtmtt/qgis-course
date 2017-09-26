@@ -77,8 +77,6 @@
 
 ---
 
----
-
 ## Closed source
 
 ![Image](assets/closed_source.png)
@@ -87,14 +85,8 @@
 
 ## Risorse utili
 
-* guida utente (manuale), training manual, introduzione GIS
+* guida utente (manuale), training manual, introduzione GIS [http://docs.qgis.org/2.18/it/docs/](http://docs.qgis.org/2.18/it/docs/)
 
-[http://docs.qgis.org/2.18/it/docs/](http://docs.qgis.org/2.18/it/docs/)
+* codice sorgente pubblico [https://github.com/qgis/QGIS](https://github.com/qgis/QGIS)
 
-* codice sorgente pubblico
-
-[https://github.com/qgis/QGIS](https://github.com/qgis/QGIS)
-
-* altri tutorial
-
-[http://www.qgistutorials.com/it/](http://www.qgistutorials.com/it/)
+* altri tutorial [http://www.qgistutorials.com/it/](http://www.qgistutorials.com/it/)
