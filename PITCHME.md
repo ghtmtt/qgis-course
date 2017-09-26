@@ -98,6 +98,17 @@
 
 ---
 
+## Come supportare QGIS
+
+* QGIS è mantenuto da *volontari*
+* altri modi per collaborare al progetto:
+
+    * sponsor
+    * traduzione (interfaccia, manuale, sito)
+    * creazione codice e bug fixing
+
+---
+
 ## Risorse utili
 
 * guida utente (manuale), training manual, introduzione GIS [http://docs.qgis.org/2.18/it/docs/](http://docs.qgis.org/2.18/it/docs/)
@@ -106,4 +117,4 @@
 
 * altri tutorial [http://www.qgistutorials.com/it/](http://www.qgistutorials.com/it/)
 
----
+* matteo.ghetta@gmail.com
