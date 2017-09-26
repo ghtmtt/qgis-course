@@ -87,14 +87,13 @@
 
 | QGIS                        | ArcGIS                   |
 |-----------------------------|--------------------------|
-| Dati supportati             | Dati inclusi             |
-| Simbologia enorme           | Statistiche su file      |
-| Plugin esterni              | Parziale supporto 3D     |
-| Modellatore algoritmi       | Documentazione           |
-| Creazione stampe            | Versione base **3000 €** |
-| Web Mapping e QGIS server   |                          |
+| Simbologia enorme           | Dati inclusi             |
+| Plugin esterni              | Statistiche su file      |
+| Modellatore algoritmi       | Parziale supporto 3D     |
+| Creazione stampe            | Documentazione           |
+| Web Mapping e QGIS server   | Versione base **3000 €** |
 | Integrazione altri software |                          |
-| **0€** (ma investire!)      |                          |
+| **0€** (ma investire!)      |
 
 
 ---
