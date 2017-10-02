@@ -117,4 +117,8 @@
 
 * altri tutorial [http://www.qgistutorials.com/it/](http://www.qgistutorials.com/it/)
 
+* siti utenti italiani QGIS [www.qgis.it](www.qgis.it)
+
+* mailing list utenti italiani di QGIS [https://lists.osgeo.org/mailman/listinfo/qgis-it-user](https://lists.osgeo.org/mailman/listinfo/qgis-it-user)
+
 * matteo.ghetta@gmail.com
