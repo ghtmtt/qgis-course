@@ -93,7 +93,26 @@
 
 ### Vettori
 
-![Immagine](assets/vec3.png) 
+Limitazioni `shapefile`
+
+* **almeno** 3 file
+* nome campi limitati a **10 caratteri**
+* lunghezza attributi, massimo **255 caratteri**
+* tipologia attributi limitata a interi, decimali e testo
+* limite dimensione a **2 GB**
+* dati **non** topologici
+* impossibile risalire a codifica (oggi **quasi** sempre `UTF-8`)
+
+* alternative:
+
+  - Database
+  - GeoPackage http://www.geopackage.org/
+
+---
+
+### Vettori
+
+![Immagine](assets/vec3.png)
 
 ---
 
@@ -101,7 +120,7 @@
 
 Filtraggio della tabella degli attributi
 
-![Immagine](assets/vec4.png) 
+![Immagine](assets/vec4.png)
 
 ---
 
@@ -171,7 +190,3 @@ Map Algebra
 ![Immagine](assets/vecrast2.jpg) <!-- .element: class="fragment" data-fragment-index="5" style="height:35%;width:35%;"-->
 
 ---
-
-
-
-
