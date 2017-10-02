@@ -93,7 +93,7 @@
 
 ### Vettori
 
-#### limitazioni `shapefile`
+#### limitazioni `shapefile` (http://switchfromshapefile.org/)
 
 * **almeno** 3 file
 * nome campi limitati a **10 caratteri**
