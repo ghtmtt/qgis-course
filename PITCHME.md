@@ -93,7 +93,7 @@
 
 ### Vettori
 
-Limitazioni `shapefile`
+#### limitazioni `shapefile`
 
 * **almeno** 3 file
 * nome campi limitati a **10 caratteri**
@@ -103,10 +103,15 @@ Limitazioni `shapefile`
 * dati **non** topologici
 * impossibile risalire a codifica (oggi **quasi** sempre `UTF-8`)
 
-* alternative:
+---
 
-  - Database
+### Vettori
+
+#### alternative:
+
+  - Database (PostGIS, SpatiaLite)
   - GeoPackage http://www.geopackage.org/
+  - file `gml`, `klm`, `geojson`
 
 ---
 
