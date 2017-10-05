@@ -73,7 +73,7 @@
 * ogni geometria dell'oggetto ha attributi (caratteristiche) <!-- .element: class="fragment" data-fragment-index="3" -->
 * indipendenti dalla risoluzione <!-- .element: class="fragment" data-fragment-index="4" -->
 
-![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:65%;width:65%;"-->
+![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:55%;width:55%;"-->
 
 ---
 
@@ -88,7 +88,7 @@
     <li class="fragment" class="fragment" data-fragment-index="4">tanti altri formati disponibili </li>
 </ul>
 
-![Immagine](assets/vec2.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:35%;width:35%;"-->
+![Immagine](assets/vec2.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:30%;width:30%;"-->
 ---
 
 ### Vettori
