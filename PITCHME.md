@@ -69,7 +69,7 @@
 ### Vettori
 
 * oggetti spaziali definiti da equazioni matematiche <!-- .element: class="fragment" data-fragment-index="1" -->
-* 3 tipologie: punti, linee, poligoni) <!-- .element: class="fragment" data-fragment-index="2" -->
+* 3 tipologie: punti, linee, poligoni <!-- .element: class="fragment" data-fragment-index="2" -->
 * ogni geometria dell'oggetto ha attributi (caratteristiche) <!-- .element: class="fragment" data-fragment-index="3" -->
 * indipendenti dalla risoluzione <!-- .element: class="fragment" data-fragment-index="4" -->
 
