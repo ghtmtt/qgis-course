@@ -153,12 +153,14 @@ Digitalizzazione
 
 ### Raster
 
-* immagini vere e proprie
-* dipendenti dalla risoluzione
-* singolo pixel ha informazione numerica (matrice)
-* elevazione terreno, concentrazione
-* adatti per informazioni continue nello spazio
-* tantissimi formati: jpeg, png, tiff, geotiff...
+<ul>
+    <li class="fragment" data-fragment-index="1">immagini vere e proprie**</li>
+    <li class="fragment" data-fragment-index="2">dipendenti dalla risoluzione)</li>
+    <li class="fragment" data-fragment-index="3">singolo pixel ha informazione numerica (matrice)</li>
+    <li class="fragment" class="fragment" data-fragment-index="4">elevazione terreno, concentrazione</li>
+    <li class="fragment" class="fragment" data-fragment-index="5">adatti per informazioni continue nello spazio</li>
+    <li class="fragment" class="fragment" data-fragment-index="6">tantissimi formati: jpeg, png, tiff, geotiff...</li>
+</ul>
 
 ---
 
