@@ -154,7 +154,7 @@ Digitalizzazione
 ### Raster
 
 <ul>
-    <li class="fragment" data-fragment-index="1">immagini vere e proprie**</li>
+    <li class="fragment" data-fragment-index="1">immagini vere e proprie</li>
     <li class="fragment" data-fragment-index="2">dipendenti dalla risoluzione)</li>
     <li class="fragment" data-fragment-index="3">singolo pixel ha informazione numerica (matrice)</li>
     <li class="fragment" class="fragment" data-fragment-index="4">elevazione terreno, concentrazione</li>
