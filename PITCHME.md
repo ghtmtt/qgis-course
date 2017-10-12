@@ -35,7 +35,7 @@ colori a scelta
 
 #### Svolgimento (2/5)
 
-Utilizzando il Calcolatore raster, estrarre le zone di pendenza inferiori a 20::
+Utilizzando il Calcolatore raster, estrarre le zone di pendenza inferiori a 20:
 
     (pendenza@1 < 20)
 
@@ -44,7 +44,7 @@ Utilizzando il Calcolatore raster, estrarre le zone di pendenza inferiori a 20::
 
 #### Svolgimento (3/5)
 
-Utilizzando il Calcolatore raster, estrarre le zone di esposizione da sud-est a sud-ovest::
+Utilizzando il Calcolatore raster, estrarre le zone di esposizione da sud-est a sud-ovest:
 
     (esposizione@1 >= 135) AND (esposizione@1 <= 225)
 
@@ -53,7 +53,7 @@ Utilizzando il Calcolatore raster, estrarre le zone di esposizione da sud-est a 
 #### Svolgimento (4/5)
 
 Utilizzando il Calcolatore Raster incrociare i due layer risultanti (pendenza < 20
-135 =< esposizione <= 225)::
+135 =< esposizione <= 225):
 
     (pendenza20@1 = 1) AND (esposizionesud@1 = 1)
 
