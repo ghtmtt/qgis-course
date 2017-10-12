@@ -21,7 +21,7 @@ Requisiti impianti fotovoltaici:
 Creazione composizione di stampa con layer risultante tematizzato con scala di
 colori a scelta
 
-![Immagine](assets/mappa_fotovoltaici.png) <!-- .element: style="height:40%;width:40%;"-->
+![Immagine](assets/mappa_fotovoltaici.png) <!-- .element: style="height:50%;width:50%;"-->
 
 ---
 
