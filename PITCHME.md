@@ -1,66 +1,64 @@
-# Test Map Algebra
+# Test Simulazione esondazione
 
 ---
 
 
-Obiettivo: dato un raster con informazioni sull'altimetria, trovare le zone più
-adatte per la costruzione di impianti fotovoltaici
+Obiettivo: simulare l'esondazione del fiume Serchio e studiare le città a rischio
 
 ---
 
-Requisiti impianti fotovoltaici:
+Simulazione:
 
-* zona pianeggiante: **pendenza inferiore a 20 gradi**
-* esposizione a sud: **angolo compreso fra 135 e 225 gradi**
+* simulare un'esondazione di 5.000 metri
+* città che ricadono in questa zona di pericolo
 
+
+N.B. l'esempio è molto semplificato
 
 ---
 
 ### Risultato finale
 
-Creazione composizione di stampa con layer risultante tematizzato con scala di
-colori a scelta
+Studio delle città a rischio di esondazione del fiume
 
-![Immagine](assets/mappa_fotovoltaici.png) <!-- .element: style="height:50%;width:50%;"-->
+![Immagine](assets/rischio.png) <!-- .element: style="height:50%;width:50%;"-->
 
 ---
 
 #### Svolgimento (1/5)
 
-1. creare mappa delle pendenze da Processing
+caricare i vettori `citta` e `fiume` dalla cartella `test1`
 
-2. creare mappa esposizione da Processing
 
 ---
 
 #### Svolgimento (2/5)
 
-Utilizzando il Calcolatore raster, estrarre le zone di pendenza inferiori a 20:
-
-    (pendenza@1 < 20)
+Utilizzare lo strumento `buffer a distanza fissa` sul vettore di fiumi inserendo
+5.000 metri come distanza
 
 ---
 
 
 #### Svolgimento (3/5)
 
-Utilizzando il Calcolatore raster, estrarre le zone di esposizione da sud-est a sud-ovest:
+Sovrapponendo il layer citta a quello del buffer appena ottenuto, si deve creare
+una selezione delle città che ricadono entro questi limiti
 
-    (esposizione@1 >= 135) AND (esposizione@1 <= 225)
+Utilizzarre lo strumento `Selezione per posizione` con citta contenute in buffer
 
 ---
 
 #### Svolgimento (4/5)
 
-Utilizzando il Calcolatore Raster incrociare i due layer risultanti (pendenza < 20
-135 =< esposizione <= 225):
+Salvare la nuova selezione come layer
 
-    (pendenza20@1 = 1) AND (esposizionesud@1 = 1)
+Utilizzare il plugin QuickMapService per caricare la mappa di sfondo
 
 ---
 
 #### Svolgimento (5/5)
 
-Utilizzare il compositore di stampe per produrre la mappa finale
+Utilizzare il compositore di stampe per produrre la mappa finale a piacimento
 
 ---
