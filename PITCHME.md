@@ -1,197 +1,66 @@
-# Geographic Free Open Source Software
+# Test Map Algebra
 
 ---
 
-#### Geographic Informative System
 
-
-![Immagine](assets/gis1.png)
-
----
-
-#### Geographic Informative System
-
-
-![Immagine](assets/gis2.png)
+Obiettivo: dato un raster con informazioni sull'altimetria, trovare le zone più
+adatte per la costruzione di impianti fotovoltaici
 
 ---
 
-#### Geographic Informative System
+Requisiti impianti fotovoltaici:
 
+* zona pianeggiante: **pendenza inferiore a 20 gradi**
+* esposizione a sud: **angolo compreso fra 135 e 225 gradi**
 
-![Immagine](assets/gis3.png)
 
 ---
 
-#### Dati NON geografici
+### Risultato finale
 
+Creazione composizione di stampa con layer risultante tematizzato con scala di
+colori a scelta
 
-![Immagine](assets/gis4.png)
-
----
-
-#### Aggiunta posizione dati
-
-
-![Immagine](assets/gis5.png)
+![Immagine](assets/mappa_fotovoltaici.png)
 
 ---
 
-#### Dati georeferenziati
+#### Svolgimento (1/5)
 
+1. creare mappa delle pendenze da Processing
 
-![Immagine](assets/gis6.png)
-
----
-
-#### Elaborazione geografica dati
-
-
-![Immagine](assets/gis7.png)
+2. creare mappa esposizione da Processing
 
 ---
 
-### Tipologie dati GIS
+#### Svolgimento (2/5)
 
-* **Vettori** (via OGR)
-* **Raster** (via GDAL)
-* <span style="color:gray">Database</span>
-* <span style="color:gray">Servizi Web (WMS, WFS...)</span>
+Utilizzando il Calcolatore raster, estrarre le zone di pendenza inferiori a 20::
 
----
-
-### Vettori e Raster
-
-![Immagine](assets/vecrast.png)
-
----
-
-### Vettori
-
-* oggetti spaziali definiti da equazioni matematiche <!-- .element: class="fragment" data-fragment-index="1" -->
-* 3 tipologie: punti, linee, poligoni <!-- .element: class="fragment" data-fragment-index="2" -->
-* ogni geometria dell'oggetto ha attributi (caratteristiche) <!-- .element: class="fragment" data-fragment-index="3" -->
-* indipendenti dalla risoluzione <!-- .element: class="fragment" data-fragment-index="4" -->
-
-![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:55%;width:55%;"-->
-
----
-
-### Vettori
-
-<ul>
-    <li class="fragment" data-fragment-index="1">formato più diffuso è **ESRI shapefile**</li>
-        <ul>
-        <li class="fragment" data-fragment-index="2">  almeno 3 file diversi (.shp, .shx, .dbf) </li>
-        <li class="fragment" data-fragment-index="3">altri file aggiuntivi (.prj, .cgc, .qpj) </li>
-        </ul>
-    <li class="fragment" class="fragment" data-fragment-index="4">tanti altri formati disponibili </li>
-</ul>
-
-![Immagine](assets/vec2.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:30%;width:30%;"-->
----
-
-### Vettori
-
-#### limitazioni `shapefile` (http://switchfromshapefile.org/)
-
-* **almeno** 3 file
-* nome campi limitati a **10 caratteri**
-* lunghezza attributi, massimo **255 caratteri**
-* tipologia attributi limitata a interi, decimali e testo
-* limite dimensione a **2 GB**
-* dati **non** topologici
-* impossibile risalire a codifica (oggi **quasi** sempre `UTF-8`)
-
----
-
-### Vettori
-
-#### alternative:
-
-  - Database (PostGIS, SpatiaLite)
-  - GeoPackage http://www.geopackage.org/
-  - file `gml`, `klm`, `geojson`
-
----
-
-### Vettori
-
-![Immagine](assets/vec3.png)
-
----
-
-### Vettori
-
-Filtraggio della tabella degli attributi
-
-![Immagine](assets/vec4.png)
-
----
-
-### Vettori
-
-Simbologia in funzione degli attributi
-
-![Immagine](assets/vec5.png)
-
----
-
-### Vettori
-
-![Immagine](assets/map.png) <!-- .element: style="height:40%;width:40%;"-->
-
----
-
-### Vettori
-
-Digitalizzazione
-
-![Immagine](assets/vec7.png)
-
----
-
-### Raster
-
-<ul>
-    <li class="fragment" data-fragment-index="1">immagini vere e proprie</li>
-    <li class="fragment" data-fragment-index="2">dipendenti dalla risoluzione)</li>
-    <li class="fragment" data-fragment-index="3">singolo pixel ha informazione numerica (matrice)</li>
-    <li class="fragment" class="fragment" data-fragment-index="4">elevazione terreno, concentrazione</li>
-    <li class="fragment" class="fragment" data-fragment-index="5">adatti per informazioni continue nello spazio</li>
-    <li class="fragment" class="fragment" data-fragment-index="6">tantissimi formati: jpeg, png, tiff, geotiff...</li>
-</ul>
-
----
-
-### Raster
-
-![Immagine](assets/rast.png)
-
----
-
-### Raster
-
-![Immagine](assets/rast2.png)
+    (pendenza@1 < 20)
 
 ---
 
 
-### Raster
+#### Svolgimento (3/5)
 
-Map Algebra
+Utilizzando il Calcolatore raster, estrarre le zone di esposizione da sud-est a sud-ovest:
 
-![Immagine](assets/rast3.jpeg)
+    (esposizione@1 >= 135) AND (esposizione@1 <= 225)
 
 ---
 
-### Vettori o Raster?
+#### Svolgimento (4/5)
 
-<ul>
-    <li class="fragment" data-fragment-index="1">dati **complementari e non esclusivi**</li>
-    <li class="fragment" data-fragment-index="2"> vettori per info **puntuali**</li>
-    <li class="fragment" data-fragment-index="3">raster per informazioni **precise**</li>
-    <li class="fragment" class="fragment" data-fragment-index="4">trasformazione da un formato all'altro</li>
-</ul>
+Utilizzando il Calcolatore Raster incrociare i due layer risultanti (pendenza < 20
+135 =< esposizione <= 225):
 
-![Immagine](assets/vecrast2.jpg) <!-- .element: class="fragment" data-fragment-index="5" style="height:30%;width:30%;"-->
+  (pendenza20@1 = 1) AND (esposizionesud@1 = 1)
+
+---
+
+#### Svolgimento (5/5)
+
+Utilizzare il compositore di stampe per produrre la mappa finale
+
+---
