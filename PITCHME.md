@@ -130,6 +130,9 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
 </ul>
 
 ![Immagine](assets/proj_pro4.png) <!-- .element: class="fragment" data-fragment-index="4" style="height:60%;width:60%;"-->
+---
+
+## True size of the Earth
 
 [true size](https://thetruesize.com/#?borders=1~!MTY0MjQzNjY.NDU5OTYxOA*MzU3MDExNzI(MjE5NzI2Ng~!GL*OTYyOTE4Nw.MjkyNzU4MzY)
 
@@ -160,25 +163,3 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
 * molti siti in cui trovare informazioni
 
 ![Immagine](assets/epsg.png) <!-- .element: style="height:60%;width:60%;"-->
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
