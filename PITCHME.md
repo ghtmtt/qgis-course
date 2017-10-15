@@ -70,8 +70,8 @@
 
 * oggetti spaziali definiti da equazioni matematiche <!-- .element: class="fragment" data-fragment-index="1" -->
 * 3 tipologie: punti, linee, poligoni <!-- .element: class="fragment" data-fragment-index="2" -->
-* ogni geometria dell'oggetto ha attributi (caratteristiche) <!-- .element: class="fragment" data-fragment-index="3" -->
-* indipendenti dalla risoluzione <!-- .element: class="fragment" data-fragment-index="4" -->
+* indipendenti dalla risoluzione <!-- .element: class="fragment" data-fragment-index="3" -->
+* ogni geometria dell'oggetto ha attributi (caratteristiche) <!-- .element: class="fragment" data-fragment-index="4" -->
 
 ![Immagine](assets/vec.png) <!-- .element: class="fragment" data-fragment-index="5" style="height:55%;width:55%;"-->
 
@@ -155,9 +155,9 @@ Digitalizzazione
 
 <ul>
     <li class="fragment" data-fragment-index="1">immagini vere e proprie</li>
-    <li class="fragment" data-fragment-index="2">dipendenti dalla risoluzione)</li>
+    <li class="fragment" data-fragment-index="2">dipendenti dalla risoluzione</li>
     <li class="fragment" data-fragment-index="3">singolo pixel ha informazione numerica (matrice)</li>
-    <li class="fragment" class="fragment" data-fragment-index="4">elevazione terreno, concentrazione</li>
+    <li class="fragment" class="fragment" data-fragment-index="4">elevazione terreno, concentrazione inquinanti</li>
     <li class="fragment" class="fragment" data-fragment-index="5">adatti per informazioni continue nello spazio</li>
     <li class="fragment" class="fragment" data-fragment-index="6">tantissimi formati: jpeg, png, tiff, geotiff...</li>
 </ul>
@@ -190,7 +190,7 @@ Map Algebra
 <ul>
     <li class="fragment" data-fragment-index="1">dati **complementari e non esclusivi**</li>
     <li class="fragment" data-fragment-index="2"> vettori per info **puntuali**</li>
-    <li class="fragment" data-fragment-index="3">raster per informazioni **precise**</li>
+    <li class="fragment" data-fragment-index="3">raster per informazioni **distribuite**</li>
     <li class="fragment" class="fragment" data-fragment-index="4">trasformazione da un formato all'altro</li>
 </ul>
 
