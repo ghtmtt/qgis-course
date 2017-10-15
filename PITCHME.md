@@ -134,6 +134,11 @@ Proiezioni diverse per scopi diversi (aree, distanze...)
 
 ## True size of the Earth
 
+![Immagine](assets/mercator.jpeg)
+---
+
+## True size of the Earth
+
 [true size](https://thetruesize.com/#?borders=1~!MTY0MjQzNjY.NDU5OTYxOA*MzU3MDExNzI(MjE5NzI2Ng~!GL*OTYyOTE4Nw.MjkyNzU4MzY)
 
 ---
